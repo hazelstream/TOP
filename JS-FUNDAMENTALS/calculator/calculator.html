@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="content">
+        <div id="numberarea">
+            <p id="numberthing"></p>
+        </div>
+        <div id="bigbuttonarea">
+            <button class="bigbutton" onclick="clearscreen()">clear</button>
+            <button class="bigbutton" onclick="deleteLast()">delete</button>
+        </div>
+        <div id="smallbuttonarea">
+            <button class="smallbutton" onclick="clickNumber(this.textContent)">7</button>
+            <button class="smallbutton" onclick="clickNumber(this.textContent)">8</button>
+            <button class="smallbutton" onclick="clickNumber(this.textContent)">9</button>
+            <button class="smallbutton" onclick="clickFunction(this.textContent)">/</button>
+            <button class="smallbutton" onclick="clickNumber(this.textContent)">4</button>
+            <button class="smallbutton" onclick="clickNumber(this.textContent)">5</button>
+            <button class="smallbutton" onclick="clickNumber(this.textContent)">6</button>
+            <button class="smallbutton" onclick="clickFunction(this.textContent)">*</button>
+            <button class="smallbutton" onclick="clickNumber(this.textContent)">1</button>
+            <button class="smallbutton" onclick="clickNumber(this.textContent)">2</button>
+            <button class="smallbutton" onclick="clickNumber(this.textContent)">3</button>
+            <button class="smallbutton" onclick="clickFunction(this.textContent)">-</button>
+            <button class="smallbutton" onclick="clickNumber(this.textContent)">.</button>
+            <button class="smallbutton" onclick="clickNumber(this.textContent)">0</button>
+            <button class="smallbutton" onclick="compute()">=</button>
+            <button class="smallbutton" onclick="clickFunction(this.textContent)">+</button>
+        </div>
+    </div>
+    <script src="code.js" type="text/javascript"></script>
+</body>
+</html>
+

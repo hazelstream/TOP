@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: auto;
+    background-color: #eec378ce;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    margin: 0 auto;
+    height: 800px;
+    width: 800px;
+}
+
+.divclass {
+    width: 95%;
+    height: 95%;
+    background-color: #1A2C42;
+    margin: 1px;
+    border-radius: 100%;
+}
+
+.divclass:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#sizeButton {
+    margin-bottom: 10px;
+    background-color: #1A2C42;
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: Ubuntu;
+    font-size: 2rem;
+}
+
+#sizeButton:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.1s all ease-in-out;
+}

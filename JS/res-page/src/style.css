@@ -1,0 +1,124 @@
+:root {
+    --main-bg-color: #5C6F68;
+    --second-bg-color: #8AA39B;
+    --nav-bg-color: #A4F9C8;
+  }
+
+@font-face {
+    font-family: 'Futura';
+    src: 
+      url('./Futura.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'AGCrown';
+    src: 
+      url('./AGCrown.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-top: 3rem;
+    background-color: var(--second-bg-color);
+    height: 100vh;
+    font-family: 'AGCrown';
+    font-size: 2rem;
+    text-shadow: 2px 2px var(--nav-bg-color);
+}
+#menu {
+    height: 3rem;
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background-color: var(--nav-bg-color);
+}
+
+
+
+ul {
+    display: flex;
+    gap: 2rem;
+    height: 100%;
+}
+
+li {
+    margin-top: .4rem;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    transition: .3s;
+    text-shadow: 2px 2px var(--main-bg-color);
+    cursor: pointer;
+}
+
+li:hover {
+    opacity: 60%;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#content {
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+img {
+    border-radius: 25px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+    max-width: 90%;
+    margin: .4rem;
+}
+
+.selected {
+    opacity: 60%;
+    pointer-events: none;
+}
+
+#menugrid {
+    max-height: 90%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+}
+
+.menuItem {
+    text-align: center;
+    background-color: var(--nav-bg-color);
+    text-shadow: 2px 2px var(--main-bg-color);
+    border-radius: 25px;
+    max-height: 100%;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+    padding: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p{ 
+    font-size: 1.3rem;
+}

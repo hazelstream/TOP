@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8"/>
+</head>
+<body>
+  <script>
+    let add7 = function(num) {
+        return num + 7
+    }
+
+    let multiply = function(num1, num2) {
+        return num1 * num2;
+    }
+
+    let capitalize = function(string) {
+        let str = string.split('');
+        str[0] = str[0].toUpperCase();
+        return str.join('');
+    }
+
+    let lastLetter = function(string) {
+        let str = string.split('');
+        return string[string.length-1];
+    }
+    console.log(lastLetter("abcd"))
+  </script>
+</body>
+</html>

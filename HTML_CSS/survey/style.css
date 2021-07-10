@@ -1,0 +1,48 @@
+:root {
+    --input-border: #8b8a8b;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: antiquewhite;
+    background: linear-gradient(115deg,
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)),
+        url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    font-size: 1.2rem;
+    font-weight: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+#titlediv {
+    text-align: center;
+    margin: 20px;
+}
+
+#survey {
+    background: linear-gradient(115deg,rgba(17, 17, 63, 0.8),rgba(24, 24, 107, 0.7));
+    padding: 3rem 5rem;
+    border-radius: 8px;
+}
+
+input {
+    font-size: 16px;
+    font-size: max(16px, 1em);
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+    background-color: #fff;
+    border: 2px solid var(--input-border);
+    border-radius: 4px;
+}

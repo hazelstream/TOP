@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: chocolate;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+
+#top {
+    background-color: beige;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#bot {
+    min-height: 50vh;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.bookclass {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.3rem;
+    background-color: beige;
+    margin: 1rem 2rem 1rem 2rem;
+    min-height: 20rem;
+    max-height: 25rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 25px;
+}
+
+#bookform {
+    text-align: center;
+    display: none;
+}
+
+#addbook {
+    padding: 2rem;
+    background-color: chocolate;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* transition: 0.4s; */
+    cursor: pointer;
+}
+
+#addbook:hover {
+    opacity: 0.8;
+}
+
+input {
+    padding: 0.7rem;
+    width: 30rem;
+    border-radius: 25px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#canceladd,
+#submitbutton {
+    font-family: 'Poppins', sans-serif;
+    padding: 0.3rem;
+    width: 10rem;
+    padding: 0.7rem 0;
+    margin-top: 2rem;
+    border-radius: 25px;
+    border-style: none;
+    cursor: pointer;
+    background-color: chocolate;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#canceladd:hover,
+#submitbutton:hover {
+    opacity: 0.8;
+}

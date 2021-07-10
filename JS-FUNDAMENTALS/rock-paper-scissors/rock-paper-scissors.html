@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+    <script>
+        let playerScore = 0;
+        let computerScore = 0;
+
+        function computerPlays() {
+            let results = ["Rock", "Paper", "Scissors"];
+            return results[Math.floor(Math.random() * 3)];
+        }
+
+        function playRound(playerSelection, computerSelection) {
+            if(playerSelection.toUpperCase() === computerSelection.toUpperCase()) {
+                return "Draw!"
+            } else if(playerSelection.toUpperCase() === "ROCK" && computerSelection.toUpperCase() === "SCISSORS"){
+                playerScore++;
+                return "You win!"
+            } else if(playerSelection.toUpperCase() === "ROCK" && computerSelection.toUpperCase() === "PAPER"){
+                computerScore++;
+                return "You lose!"
+            } else if(playerSelection.toUpperCase() === "PAPER" && computerSelection.toUpperCase() === "SCISSORS"){
+                computerScore++;
+                return "You lose!"
+            } else if(playerSelection.toUpperCase() === "PAPER" && computerSelection.toUpperCase() === "ROCK"){
+                playerScore++;
+                return "You win!"
+            } else if(playerSelection.toUpperCase() === "SCISSORS" && computerSelection.toUpperCase() === "PAPER"){
+                playerScore++;
+                return "You win!"
+            } else if(playerSelection.toUpperCase() === "SCISSORS" && computerSelection.toUpperCase() === "ROCK"){
+                computerScore++;
+                return "You lose!"
+            } 
+        }
+
+        function game() {
+
+            
+
+            for (let i = 0; i < 5; i++) {
+                let playerSelection = window.prompt("Rock, paper or scissors?");
+                let computerSelection = computerPlays();
+                playRound(playerSelection, computerSelection);
+            }
+            console.log("Player got " + playerScore + ". Computer got " + computerScore)
+        }
+        game();
+  </script>
+</body>
+</html>

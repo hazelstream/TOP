@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    
+    font-size: 2rem;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+button {
+    font-size: inherit;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 1px rebeccapurple;
+}
+
+#numberthing {
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 1px rebeccapurple;
+}
+
+#content {
+    width: fit-content;
+    height: fit-content;
+    background-color: rebeccapurple;
+    padding: 1.6rem;
+    display: grid;
+    gap: .3rem;
+    border-radius: 55px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#smallbuttonarea {
+    display: grid;
+    gap: .3rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#bigbuttonarea {
+    display: grid;
+    gap: .3rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.smallbutton {
+    padding: .5rem 1rem;
+}
+
+.smallbutton:active {
+    animation: clickbutton .05s ease;
+}
+
+.bigbutton {
+    padding: .5rem 1rem;
+}
+
+.bigbutton:active {
+    animation: clickbutton .05s ease;
+}
+
+#numberthing {
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-align: right;
+    padding: .2rem;
+    height: 1.5rem;
+}
+
+@keyframes clickbutton {
+    0% {
+        transform: skew(0deg, 0deg);
+    }
+
+    70% {
+        transform: skew(.312rad);
+    }
+
+    100% {
+        transform: skew(0deg, 0deg);
+    }
+}
